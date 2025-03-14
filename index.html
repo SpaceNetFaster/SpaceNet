@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Campany Profile</title>
+<!-- 
+Journey Template 
+http://www.templatemo.com/tm-511-journey
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+      </head>
+
+      <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>    
+            <div class="tm-top-bar" id="tm-top-bar">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo-spacenet.png" alt="Site logo" class="">
+                                
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-2">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-3"> Price</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://wa.me/+6281389406260?text=Hallo min, Mau berlangganan Internet">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>                            
+                    </nav>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
+        <div class="tm-page-wrap mx-auto" >
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+
+                        <div class="row tm-banner-row tm-banner-row-header">
+                            <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <h2 >Meroket Dengan Koneksi</h2>
+                                    <h1 class="text-uppercase tm-banner-title">"Space Net"</h1>
+                                    <!-- <img src="img/dots-3.png" alt="Dots"> -->
+                                     <br>
+                                    <p class="tm-banner-subtitle">WLet's collaborate or become our partner.</p>
+                                    <!-- <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>        -->
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+                        <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form onsubmit="sendmessage()" action="#" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                                
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="name" >Nama</label>
+                                        <input  type="text" class="form-control" id="name" placeholder="masukan nama anda" required>
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-1">                                    
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="rw" >Pilih RW Anda</label>
+                                            <select class="form-control tm-select" id="rw" required >
+                                                <option value="1" selected>18</option>
+                                                <option value="2">17</option>
+                                                <option value="3">12</option>
+                                                <option value="4">08</option>
+                                                <option value="5">05</option>
+                                                <option value="6">03</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                            <label for="rt" >Pilih RT Anda</label>     
+                                            <select  class="form-control tm-select" id="rt" required>
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                            <label for="nomer" >Nomer Rumah</label>                                            
+                                            <input  type="text" class="form-control" id="nomer" placeholder="masukan Nomer Rumah Anda" required >
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                            <label for="alamat" >Alamat Lengkap</label>
+                                            <input  type="text" class="form-control" id="alamat" placeholder="masukan alamat lengkap" required>
+                                        </div>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <div class="form-row tm-search-form-row">
+
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="survey" >Rencana Survey</label>
+                                        <input  type="date" class="form-control" id="survey"  placeholder="Masukan Tanggal Survey" required >
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="instalasi" >Rencana Instalasi</label>
+                                        <input  type="date" class="form-control" id="instalasi" placeholder="Masukan Tanggal Survey" required >
+                                    </div>
+                                    <!-- <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1"> -->
+                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase"  >Daftar Sekarang</button>
+                                    </div>
+                                </div>                              
+                            </form>                             
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div>  <!-- .container -->                   
+                </div>     <!-- .tm-container-outer -->                 
+            </section>
+
+            <section class="p-5 tm-container-outer tm-bg-gray" id="tm-section-2">            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
+                            <h2 class="text-uppercase mb-4">Space.Net</h2>
+                            <p class="mb-4">Space Net bukan hanya sekadar penyedia layanan internet. Kami adalah agen perubahan yang bertujuan membentuk masa depan yang berkelanjutan dan membangun komunitas yang cerdas dan bertanggung jawab. Sebagai pemimpin dalam industri jaringan dan penyedia layanan internet, kami menempatkan membangun lingkungan dan peningkatan kualitas sumber daya manusia remaja di pusat misi dan visi kami.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            
+            <!-- <div class="tm-container-outer" >
+                <H2 class="text-center">Our Service</H2>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <video autoplay loop  muted src="vidio/internet.mp4"></video>
+                        <img src="img/1.webp" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">INTERNET AKSES</h2>
+                        <p>Layanan Internet dengan bandwidth broadband untuk memenuhi kebutuhan internet pelanggan bisnis/usaha kecil menengah (UKM) diberbagai bidang dalam mengelola dan meningkatkan kualitas bisnis serta kesuksesan bisnisnya.
+
+                            Layanan dengan biaya terjangkau dan dukungan jaringan fiber optic dan managemen bandwidth broadband yang terukur sesuai kebuthan bisnis, sehingga pelanggan dapat fokus dalam menjalankan bisnis/usahanya dengan tenang dan aman.
+                        </p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/cctv1.png" alt="Image">
+                        <img src="img/cctv2.png" alt="Image">
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">HOTSPOT</h2>
+                        <p>Bingung cari Wi-Fi di luar rumah? Hotspot kami menyediakan koneksi cepat untuk semua orang, sempurna untuk bekerja, belajar, Game atau sekadar browsing!
+                            </p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/2.webp" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">SULUSI JARINGAN</h2>
+                        <p>Layanan solusi jaringan meliputi: Analisa, Desain, Implementasi, Integritas, Manajemen Project, Perencanaan Produk dan Financial Modeling untuk Jaringan Infrastruktur.
+                        </p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+            </div>         -->
+            <div class="tm-container-outer container" id="tm-section-3" >
+
+                <div class="tab-content clearfix">
+                    <hr class="my-4 mx-auto" />
+
+                	<h2 class="text-center">PRICE</h2>
+                    <!-- Tab 1 -->
+ 
+
+                    
+                    <!-- Tab 4 -->
+                    <div class="tab-pane fade show active" id="4a">
+                    <!-- Current Active Tab WITH "show active" classes in DIV tag -->
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/Logo baru SpaceNet.png" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Fast 5 MBPS</h3>
+                                    <p class="tm-text-highlight">Gratis Biaya Pemasangan</p>
+                                    <p class="tm-text-gray">Nikmati koneksi internet yang cepat dan stabil dengan paket 5 Mbps, ideal untuk penggunaan ringan seperti browsing, streaming lancar, dan aktivitas online tanpa hambatan, serta memberikan efisiensi dalam upload dan download.</p>   
+                                </div>
+                                <a href="https://wa.me/+6281389406260?text=Mau berlangganan Internet 5 MBPS" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp.129.900</p>
+                                    <p class="tm-recommended-price-link">Daftar Sekarang</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Logo baru SpaceNet.png" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Fast 10 MBPS</h3>
+                                    <p class="tm-text-highlight">Gratis Biaya Pemasangan</p>
+                                    <p class="tm-text-gray">Nikmati koneksi internet yang cepat dan stabil dengan paket 10 Mbps, ideal untuk penggunaan ringan seperti browsing, streaming lancar, dan aktivitas online tanpa hambatan, serta memberikan efisiensi dalam upload dan download.</p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="https://wa.me/+6281389406260?text=Mau berlangganan Internet 10 MBPS" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp.149.900</p>
+                                    <p class="tm-recommended-price-link">Daftar Sekarang</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Logo baru SpaceNet.png" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Fast 15 MBPS</h3>
+                                    <p class="tm-text-highlight">Gratis Biaya Pemasangan</p>
+                                    <p class="tm-text-gray">Nikmati koneksi internet yang cepat dan stabil dengan paket 15 Mbps, ideal untuk penggunaan ringan seperti browsing, streaming lancar, dan aktivitas online tanpa hambatan, serta memberikan efisiensi dalam upload dan download.</p>   
+                                </div>
+                                <a href="https://wa.me/+6281389406260?text=Mau berlangganan Internet 15 MBPS" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp.179.900</p>
+                                    <p class="tm-recommended-price-link">Daftar Sekarang</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/Logo baru SpaceNet.png" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Fast 20 MBPS</h3>
+                                    <p class="tm-text-highlight">Gratis Biaya Pemasangan</p>
+                                    <p class="tm-text-gray">Nikmati koneksi internet yang cepat dan stabil dengan paket 20 Mbps, ideal untuk penggunaan ringan seperti browsing, streaming lancar, dan aktivitas online tanpa hambatan, serta memberikan efisiensi dalam upload dan download.</p>   
+                                </div>
+                                <a href="https://wa.me/+6281389406260?text=Mau berlangganan Internet 20 MBPS" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp.199.900</p>
+                                    <p class="tm-recommended-price-link">Daftar Sekarang</p>
+                                </a>
+                            </div>   
+                            <div class="tm-recommended-place">
+                                <img src="img/Logo baru SpaceNet.png" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Fast 30 MBPS</h3>
+                                    <p class="tm-text-highlight">Gratis Biaya Pemasangan</p>
+                                    <p class="tm-text-gray">Nikmati koneksi internet yang cepat dan stabil dengan paket 30 Mbps, ideal untuk penggunaan ringan seperti browsing, streaming lancar, dan aktivitas online tanpa hambatan, serta memberikan efisiensi dalam upload dan download.</p>   
+                                </div>
+                                <a href="https://wa.me/+6281389406260?text=Mau berlangganan Internet 30 MBPS" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp.249.900</p>
+                                    <p class="tm-recommended-price-link">Daftar Sekarang</p>
+                                </a>
+                            </div>   
+                            <div class="tm-recommended-place">
+                                <img src="img/Logo baru SpaceNet.png" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Fast 50 MBPS</h3>
+                                    <p class="tm-text-highlight">Gratis Biaya Pemasangan</p>
+                                    <p class="tm-text-gray">Nikmati koneksi internet yang cepat dan stabil dengan paket 50 Mbps, ideal untuk penggunaan ringan seperti browsing, streaming lancar, dan aktivitas online tanpa hambatan, serta memberikan efisiensi dalam upload dan download.</p>   
+                                </div>
+                                <a href="https://wa.me/+6281389406260?text=Mau berlangganan Internet 50MBPS" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">Rp.319.900</p>
+                                    <p class="tm-recommended-price-link">Daftar Sekarang</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+
+                </div>
+
+
+
+  </div>
+</div>
+</div>
+
+
+</div>
+            <section class="contact-section bg-black container">
+                <div class="judulwhy">
+                    <h3>Why Choose Us
+                    </h3>
+                </div>
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <img src="img/24-hours.png" alt="">
+                                    <hr class="my-2 mx-auto" />
+                                    <h4 >24 Hours NOC  </h4>
+                                    <hr class="my-2 mx-auto" />
+                                    <div class="small text-black-50">
+                                        <p>Dengan Dukungan NOC dan teknisi 7 * 24 yang  berpengalaman.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <img src="img/help-desk.png" alt="">
+                                    <hr class="my-2 mx-auto" />
+                                    <h4 >24 Hours Support                                    </h4>
+                                    <hr class="my-2 mx-auto" />
+                                    <div class="small text-black-50">
+                                        <p>Tidak perlu khawatir ketika ada masalah, tim kami siap membantu.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-2 mx-auto" />
+
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <img src="img/bandwidth.png" alt="">
+                                    <hr class="my-2 mx-auto" />
+                                    <h4 >Bandwith Simetris</h4>
+                                    <hr class="my-2 mx-auto" />
+                                    <div class="small text-black-50">
+                                        <p>Kami memberikan rasio download dan upload sampai 1:1
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <img src="img/time-management.png" alt="">
+                                    <hr class="my-2 mx-auto" />
+                                    <h4 >Realtime Monitoring                                    </h4>
+                                    <hr class="my-2 mx-auto" />
+                                    <div class="small text-black-50">
+                                        <p>Memastikan akses internet kami distribusikan dengan baik.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <img src="img/optical-fiber.png" alt="">
+                                    <hr class="my-2 mx-auto" />
+                                    <h4 >100% Fiber Optic                                    </h4>
+                                    <hr class="my-2 mx-auto" />
+                                    <div class="small text-black-50">
+                                        <p>Internet Cepat, Murah, Stabil dan dapat di Andalkan.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <img src="img/technical-support.png" alt="">
+                                    <hr class="my-2 mx-auto" />
+                                    <h4 >After Sales                                    </h4>
+                                    <hr class="my-2 mx-auto" />
+                                    <div class="small text-black-50">
+                                        <p>Tidak perlu khawatir mengenai batasan kuota atau FUP.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="whatapp">
+                    <img class="wa" src="img/wa.png" alt="">
+                </div> -->
+            </section>
+
+            <footer class="tm-container-outer">
+                <p class="mb-0">Copyright © Space.Net 2025</p>
+            </footer>
+        </div>
+        <script>
+
+                    
+
+        </script>
+    </div> <!-- .main-content -->
+
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+    <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+    <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+    <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+    <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script src="js/form.js" ></script>
+    <script> 
+        /* Google Maps
+        ------------------------------------------------*/
+
+
+
+        var map = '';
+        var center;
+
+
+
+        function calculateCenter() {
+            center = map.getCenter();
+        }
+
+        function loadGoogleMap(){
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+            document.body.appendChild(script);
+        } 
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            // Change top navbar on scroll
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 100) {
+                    $(".tm-top-bar").addClass("active");
+                } else {                    
+                 $(".tm-top-bar").removeClass("active");
+                }
+            });
+
+            // Smooth scroll to search form
+            $('.tm-down-arrow-link').click(function(){
+                $.scrollTo('#tm-section-search', 300, {easing:'linear'});
+            });
+
+            // Date Picker in Search form
+            var pickerCheckIn = datepicker('#inputCheckIn');
+            var pickerCheckOut = datepicker('#inputCheckOut');
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
+                currentClass:'active',
+                offset: 60
+            });
+
+            // Close navbar after clicked
+            $('.nav-link').click(function(){
+                $('#mainNav').removeClass('show');
+            });
+
+            // Slick Carousel
+            $('.tm-slideshow').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+            loadGoogleMap();                                       // Google Map                
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+
+
+    </script>             
+
+</body>
+</html>
