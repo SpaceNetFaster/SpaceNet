@@ -133,6 +133,7 @@ p:last-child { margin-bottom: 0; }
 .tm-banner-bg {
     background: url(../img/dots-3.png) center top no-repeat;    
     min-height: 720px;
+	width: 100%;
     position: relative;
 }
 .tm-banner-row { 
